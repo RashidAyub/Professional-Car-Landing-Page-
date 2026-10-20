@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velocity Motors - The apex of luxury automotive engineering. Explore our handcrafted sports cars, hypercars, and electric performance vehicles.">
+  <meta name="keywords" content="Velocity Motors, luxury cars, hypercars, sports cars, electric vehicle, high performance, automotive">
+  <meta name="author" content="Velocity Motors">
+  <meta name="theme-color" content="#08080a">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="VELOCITY MOTORS | Drive Your Dream">
+  <meta property="og:description" content="Experience the perfect fusion of performance, luxury, and innovation. Discover the fleet.">
+  <meta property="og:type" content="website">
+
+  <title>VELOCITY MOTORS | Luxury Automotive & Hypercars</title>
+
+  <!-- Google Fonts: Space Grotesk & Outfit for modern automotive luxury -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Velocity Motors Home">
+        <svg class="logo-icon" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 26L18 4L22 4L8 26H4Z" fill="#FF1E27"/>
+          <path d="M14 26L28 4L36 4L22 26H14Z" fill="#FFFFFF"/>
+          <circle cx="28" cy="22" r="3" fill="#FF1E27"/>
+        </svg>
+        <span class="logo-text">VELOCITY <span class="accent-text">MOTORS</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#fleet" class="nav-link">Our Cars</a>
+        <a href="#why-us" class="nav-link">About</a>
+        <a href="#performance" class="nav-link">Services</a>
+        <a href="#cta" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#fleet" class="btn btn-primary nav-cta">
+          <span>Explore Cars</span>
+          <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <a href="#hero" class="mobile-nav-link">Home</a>
+          <a href="#fleet" class="mobile-nav-link">Our Cars</a>
+          <a href="#why-us" class="mobile-nav-link">About</a>
+          <a href="#performance" class="mobile-nav-link">Services</a>
+          <a href="#cta" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-drawer-cta">
+          <a href="#fleet" class="btn btn-primary btn-block">Explore Collection</a>
+          <button class="btn btn-secondary btn-block modal-open-trigger" data-modal="modal-test-drive">Book a Test Drive</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop">
+        <img 
+          src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=2200&q=85" 
+          alt="Velocity Motors flagship luxury sports hypercar parked under dramatic ambient lighting" 
+          class="hero-bg-img"
+          loading="eager"
+        >
+        <div class="hero-overlay"></div>
+        <div class="hero-grid-pattern"></div>
+      </div>
+
+      <div class="hero-container container">
+        <div class="hero-content">
+          <!-- Tagline Badge -->
+          <div class="hero-badge animate-fade-in-up">
+            <span class="pulse-dot"></span>
+            <span>THE APEX OF MOTORSPORT LUXURY</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title animate-fade-in-up delay-1">
+            DRIVE YOUR <span class="hero-highlight">DREAM.</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subtitle animate-fade-in-up delay-2">
+            Experience the perfect fusion of performance, luxury, and innovation. Handcrafted aerodynamics, exhilarating power, and bespoke racing pedigree engineered without compromise.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-actions animate-fade-in-up delay-3">
+            <a href="#fleet" class="btn btn-primary btn-lg">
+              <span>Explore Collection</span>
+              <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#why-us" class="btn btn-secondary btn-lg">
+              <span>Discover More</span>
+            </a>
+          </div>
+
+          <!-- Hero Telemetry Highlights -->
+          <div class="hero-telemetry animate-fade-in-up delay-4">
+            <div class="telemetry-item">
+              <span class="telemetry-value">2.1<small>s</small></span>
+              <span class="telemetry-label">0-60 MPH Sprint</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-value">1,020<small>+</small></span>
+              <span class="telemetry-label">Horsepower Output</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-value">225<small>mph</small></span>
+              <span class="telemetry-label">Track Top Speed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#fleet" class="scroll-indicator" aria-label="Scroll down to featured fleet">
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span class="scroll-text">EXPLORE FLEET</span>
+      </a>
+    </section>
+
+    <!-- FEATURED CARS SECTION -->
+    <section class="section fleet-section" id="fleet">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="section-badge">FEATURED COLLECTION</div>
+          <h2 class="section-title">ENGINEERED FOR SUPREMACY</h2>
+          <p class="section-subtitle">
+            Every vehicle in the Velocity stable represents the pinnacle of aerodynamic purity, carbon monocoque construction, and bespoke performance engineering.
+          </p>
+          
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs" role="tablist" aria-label="Car Category Filter">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Vehicles</button>
+            <button class="filter-btn" data-filter="hypercar" role="tab" aria-selected="false">Hypercars</button>
+            <button class="filter-btn" data-filter="grand-tourer" role="tab" aria-selected="false">Grand Tourers</button>
+            <button class="filter-btn" data-filter="electric" role="tab" aria-selected="false">Pure Electric</button>
+          </div>
+        </div>
+
+        <!-- Car Cards Grid -->
+        <div class="cars-grid" id="cars-grid">
+
+          <!-- Car Card 1: Velocity Phantom GT -->
+          <article class="car-card" data-category="grand-tourer" data-car-id="phantom-gt">
+            <div class="car-card-media">
+              <div class="card-badge">V8 Bi-Turbo</div>
+              <img 
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" 
+                alt="Velocity Phantom GT Grand Tourer in sleek stealth black" 
+                class="car-card-img" 
+                loading="lazy"
+              >
+              <div class="card-overlay-hover">
+                <span class="quick-view-badge">Click for Specs</span>
+              </div>
+            </div>
+
+            <div class="car-card-body">
+              <div class="car-header">
+                <div>
+                  <span class="car-category-tag">Grand Tourer</span>
+                  <h3 class="car-model-name">Velocity Phantom GT</h3>
+                </div>
+                <div class="car-price-box">
+                  <span class="price-prefix">Starting at</span>
+                  <span class="car-price">$285,000</span>
+                </div>
+              </div>
+
+              <p class="car-description">
+                The quintessential luxury grand tourer. Harmonizing raw acoustic thrill, handcrafted Italian leather, and continent-crossing endurance with effortless poise.
+              </p>
+
+              <!-- Quick Specs Pill -->
+              <div class="car-specs-row">
+                <div class="spec-pill">
+                  <span class="spec-num">850 HP</span>
+                  <span class="spec-desc">Power</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-num">2.7s</span>
+                  <span class="spec-desc">0-60 MPH</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-num">211 MPH</span>
+                  <span class="spec-desc">Top Speed</span>
+                </div>
+              </div>
+
+              <!-- Card Actions -->
+              <div class="car-card-footer">
+                <button class="btn btn-outline btn-details view-details-btn" data-car-id="phantom-gt">
+                  <span>View Details</span>
+                </button>
+                <button class="btn btn-primary modal-open-trigger" data-modal="modal-test-drive" data-car-model="Velocity Phantom GT">
+                  <span>Test Drive</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Car Card 2: Velocity Apex Stradale (Flagship) -->
+          <article class="car-card featured-highlight" data-category="hypercar" data-car-id="apex-stradale">
+            <div class="car-card-media">
+              <div class="card-badge badge-flagship">Flagship Hypercar</div>
+              <img 
+                src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80" 
+                alt="Velocity Apex Stradale track-focused hypercar with active aerodynamics" 
+                class="car-card-img" 
+                loading="lazy"
+              >
+              <div class="card-overlay-hover">
+                <span class="quick-view-badge">Click for Specs</span>
+              </div>
+            </div>
+
+            <div class="car-card-body">
+              <div class="car-header">
+                <div>
+                  <span class="car-category-tag">Pure Hypercar</span>
+                  <h3 class="car-model-name">Velocity Apex Stradale</h3>
+                </div>
+                <div class="car-price-box">
+                  <span class="price-prefix">Starting at</span>
+                  <span class="car-price">$365,000</span>
+                </div>
+              </div>
+
+              <p class="car-description">
+                Sculpted in the wind tunnel for unrelenting downforce. Featuring a naturally aspirated 6.5L V12 screaming to 9,500 RPM alongside race-derived active ground effects.
+              </p>
+
+              <!-- Quick Specs Pill -->
+              <div class="car-specs-row">
+                <div class="spec-pill">
+                  <span class="spec-num">940 HP</span>
+                  <span class="spec-desc">V12 Engine</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-num">2.4s</span>
+                  <span class="spec-desc">0-60 MPH</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-num">224 MPH</span>
+                  <span class="spec-desc">Top Speed</span>
+                </div>
+              </div>
+
+              <!-- Card Actions -->
+              <div class="car-card-footer">
+                <button class="btn btn-outline btn-details view-details-btn" data-car-id="apex-stradale">
+                  <span>View Details</span>
+                </button>
+                <button class="btn btn-primary modal-open-trigger" data-modal="modal-test-drive" data-car-model="Velocity Apex Stradale">
+                  <span>Test Drive</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Car Card 3: Velocity Electra Hyper-EV -->
+          <article class="car-card" data-category="electric" data-car-id="electra-ev">
+            <div class="car-card-media">
+              <div class="card-badge badge-ev">Zero Emissions • Quad Motor</div>
+              <img 
+                src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80" 
+                alt="Velocity Electra Hyper-EV cockpit and silhouette with neon accents" 
+                class="car-card-img" 
+                loading="lazy"
+              >
+              <div class="card-overlay-hover">
+                <span class="quick-view-badge">Click for Specs</span>
+              </div>
+            </div>
+
+            <div class="car-card-body">
+              <div class="car-header">
+                <div>
+                  <span class="car-category-tag">Pure Electric AWD</span>
+                  <h3 class="car-model-name">Velocity Electra EV</h3>
+                </div>
+                <div class="car-price-box">
+                  <span class="price-prefix">Starting at</span>
+                  <span class="car-price">$410,000</span>
+                </div>
+              </div>
+
+              <p class="car-description">
+                Instantaneous torque meets silent fury. Driven by 4 independent magnetic motors and an 800V silicon-carbide architecture offering hypercar velocity with zero tailpipe emissions.
+              </p>
+
+              <!-- Quick Specs Pill -->
+              <div class="car-specs-row">
+                <div class="spec-pill">
+                  <span class="spec-num">1,150 HP</span>
+                  <span class="spec-desc">Quad AWD</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-num">1.95s</span>
+                  <span class="spec-desc">0-60 MPH</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-num">225 MPH</span>
+                  <span class="spec-desc">Top Speed</span>
+                </div>
+              </div>
+
+              <!-- Card Actions -->
+              <div class="car-card-footer">
+                <button class="btn btn-outline btn-details view-details-btn" data-car-id="electra-ev">
+                  <span>View Details</span>
+                </button>
+                <button class="btn btn-primary modal-open-trigger" data-modal="modal-test-drive" data-car-model="Velocity Electra EV">
+                  <span>Test Drive</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="section why-us-section" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">THE VELOCITY ADVANTAGE</div>
+          <h2 class="section-title">WHY CHOOSE VELOCITY</h2>
+          <p class="section-subtitle">
+            Transcending conventional manufacturing through relentless devotion to engineering perfection, artisan craftsmanship, and client prestige.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1: Premium Quality -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Premium Quality</h3>
+            <p class="feature-desc">
+              Aerospace-grade autoclave carbon composites, hand-matched bridge of weir leather, and titanium fasteners machined to aerospace micron tolerances.
+            </p>
+            <ul class="feature-list">
+              <li>Hand-assembled monocoque</li>
+              <li>Bespoke tailor-made interiors</li>
+              <li>5-stage diamond lacquer finish</li>
+            </ul>
+          </div>
+
+          <!-- Feature 2: Exceptional Performance -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Exceptional Performance</h3>
+            <p class="feature-desc">
+              Race-bred powertrains producing instant throttle response, accompanied by Formula 1-inspired active downforce wings and carbon-ceramic braking systems.
+            </p>
+            <ul class="feature-list">
+              <li>Sub-2.5s acceleration launches</li>
+              <li>Active predictive aerodynamics</li>
+              <li>Carbon-silicon brakes (100-0 in 29m)</li>
+            </ul>
+          </div>
+
+          <!-- Feature 3: Advanced Technology -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+                <path d="M16 8l3-3"/>
+                <path d="M8 8L5 5"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Advanced Technology</h3>
+            <p class="feature-desc">
+              Dynamic torque vectoring, real-time telemetry heads-up projection, adaptive magnetorheological damping, and over-the-air performance tuning.
+            </p>
+            <ul class="feature-list">
+              <li>Telemetry cockpit HUD</li>
+              <li>Neural traction intelligence</li>
+              <li>Fast 800V charging architecture</li>
+            </ul>
+          </div>
+
+          <!-- Feature 4: Trusted Service -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Trusted Service</h3>
+            <p class="feature-desc">
+              A private 24/7 global concierge, enclosed white-glove vehicle transport, international trackside support mechanics, and a lifetime chassis integrity warranty.
+            </p>
+            <ul class="feature-list">
+              <li>Dedicated personal VIP liaison</li>
+              <li>Global covered door-to-door delivery</li>
+              <li>Track-day factory engineering crew</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFORMANCE SHOWCASE SECTION -->
+    <section class="section performance-section" id="performance">
+      <div class="performance-backdrop">
+        <div class="performance-glow glow-1"></div>
+        <div class="performance-glow glow-2"></div>
+      </div>
+
+      <div class="container relative-z">
+        <div class="section-header text-center">
+          <div class="section-badge">TELEMETRY BENCHMARK</div>
+          <h2 class="section-title">PERFORMANCE SHOWCASE</h2>
+          <p class="section-subtitle">
+            Unfiltered mechanical and electrical supremacy. Pure adrenaline quantified into track-shattering numbers.
+          </p>
+        </div>
+
+        <!-- Animated Stats Counter Grid -->
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card">
+            <div class="stat-icon-glow"></div>
+            <div class="stat-number-box">
+              <span class="stat-counter" data-target="1150" data-decimals="0">0</span>
+              <span class="stat-unit">HP</span>
+            </div>
+            <h3 class="stat-label">Maximum Horsepower</h3>
+            <p class="stat-sub">Quad-motor electric and bi-turbo hybrid peak powertrain rating</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card">
+            <div class="stat-icon-glow"></div>
+            <div class="stat-number-box">
+              <span class="stat-counter" data-target="1.95" data-decimals="2">0</span>
+              <span class="stat-unit">s</span>
+            </div>
+            <h3 class="stat-label">0-60 MPH Acceleration</h3>
+            <p class="stat-sub">Sub-two-second launch control with pre-conditioned traction launch</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card">
+            <div class="stat-icon-glow"></div>
+            <div class="stat-number-box">
+              <span class="stat-counter" data-target="225" data-decimals="0">0</span>
+              <span class="stat-unit">MPH</span>
+            </div>
+            <h3 class="stat-label">Track Top Speed</h3>
+            <p class="stat-sub">Aerodynamically stabilized terminal velocity in unrestricted track mode</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card">
+            <div class="stat-icon-glow"></div>
+            <div class="stat-number-box">
+              <span class="stat-counter" data-target="1350" data-decimals="0">0</span>
+              <span class="stat-unit">Nm</span>
+            </div>
+            <h3 class="stat-label">Instant Peak Torque</h3>
+            <p class="stat-sub">Zero-RPM full rotational torque vectoring across four wheels</p>
+          </div>
+        </div>
+
+        <!-- Telemetry Highlight Strip -->
+        <div class="telemetry-bar">
+          <div class="telemetry-bar-item">
+            <span class="bar-title">50 : 50</span>
+            <span class="bar-label">Optimal Axle Weight Balance</span>
+          </div>
+          <div class="telemetry-bar-divider"></div>
+          <div class="telemetry-bar-item">
+            <span class="bar-title">1.38 G</span>
+            <span class="bar-label">Lateral Cornering Load</span>
+          </div>
+          <div class="telemetry-bar-divider"></div>
+          <div class="telemetry-bar-item">
+            <span class="bar-title">800V</span>
+            <span class="bar-label">Silicon-Carbide Architecture</span>
+          </div>
+          <div class="telemetry-bar-divider"></div>
+          <div class="telemetry-bar-item">
+            <span class="bar-title">0.24 Cd</span>
+            <span class="bar-label">Active Drag Coefficient</span>
+          </div>
+        </div>
+
+        <!-- Mandatory Disclaimer for portfolio transparency -->
+        <div class="demo-disclaimer" role="note">
+          <svg class="disclaimer-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+          </svg>
+          <span><strong>Portfolio Demonstration Notice:</strong> All figures and telemetry statistics shown above are illustrative demo data created for concept and interface presentation, not verified specifications for real commercial road vehicles.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL-TO-ACTION (CTA) SECTION -->
+    <section class="section cta-section" id="cta">
+      <div class="cta-backdrop">
+        <div class="cta-radial-glow"></div>
+      </div>
+
+      <div class="container relative-z">
+        <div class="cta-card">
+          <div class="cta-content">
+            <span class="section-badge">RESERVE YOUR ALLOCATION</span>
+            <h2 class="cta-heading">YOUR NEXT DRIVE STARTS HERE.</h2>
+            <p class="cta-subheading">
+              Step beyond the ordinary. Schedule an exclusive private demonstration at our design atelier, experience closed-circuit testing, or speak directly with our bespoke vehicle commission team.
+            </p>
+
+            <div class="cta-button-group">
+              <button class="btn btn-primary btn-xl modal-open-trigger" data-modal="modal-test-drive">
+                <span>Book a Test Drive</span>
+                <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <a href="#footer" class="btn btn-secondary btn-xl">
+                <span>Contact VIP Concierge</span>
+              </a>
+            </div>
+
+            <!-- Trust badges -->
+            <div class="cta-trust-strip">
+              <div class="trust-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Private Closed-Course Track Sessions</span>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Bespoke Customization Atelier</span>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Zero Obligation Consultation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Velocity Motors Home">
+            <svg class="logo-icon" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 26L18 4L22 4L8 26H4Z" fill="#FF1E27"/>
+              <path d="M14 26L28 4L36 4L22 26H14Z" fill="#FFFFFF"/>
+              <circle cx="28" cy="22" r="3" fill="#FF1E27"/>
+            </svg>
+            <span class="logo-text">VELOCITY <span class="accent-text">MOTORS</span></span>
+          </a>
+          <p class="footer-tagline">
+            Pioneering the benchmark of luxury motorsport engineering. Redefining what is possible between human intuition and machine velocity.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="social-links" aria-label="Social media profiles">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow Velocity Motors on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Watch Velocity Motors on YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+              </svg>
+            </a>
+            <!-- Twitter/X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow Velocity Motors on X (formerly Twitter)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Connect with Velocity Motors on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#fleet">Our Fleet</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#performance">Performance</a></li>
+            <li><a href="#cta">Book Test Drive</a></li>
+          </ul>
+        </div>
+
+        <!-- Models Column -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">The Models</h4>
+          <ul class="footer-links">
+            <li><a href="#fleet" class="fleet-filter-link" data-filter="all">Velocity Phantom GT</a></li>
+            <li><a href="#fleet" class="fleet-filter-link" data-filter="hypercar">Velocity Apex Stradale</a></li>
+            <li><a href="#fleet" class="fleet-filter-link" data-filter="electric">Velocity Electra EV</a></li>
+            <li><a href="#cta">Custom Bespoke Build</a></li>
+            <li><a href="#cta">Certified Pre-Owned</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Atelier Column -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Atelier & Concierge</h4>
+          <ul class="contact-info-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>450 Grand Prix Boulevard, Monaco &amp; Beverly Hills, CA</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+1 (800) 835-6248 / +377 98 00 00</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>vip.concierge@velocitymotors.example</span>
+            </li>
+          </ul>
+
+          <!-- Newsletter Subscribe -->
+          <div class="footer-newsletter">
+            <span class="newsletter-label">Private Dispatch &amp; Invitations</span>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Enter your email" required class="newsletter-input" aria-label="Enter email for private newsletter">
+              <button type="submit" class="btn btn-primary btn-sm newsletter-btn" aria-label="Subscribe to newsletter">
+                <span>Join</span>
+              </button>
+            </form>
+            <span class="newsletter-feedback" id="newsletter-feedback"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright & Legal -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> VELOCITY MOTORS S.A. All rights reserved. Created for Frontend Developer Task 1.
+        </p>
+        <div class="legal-links">
+          <a href="#hero">Privacy Policy</a>
+          <span class="legal-separator">•</span>
+          <a href="#hero">Terms of Service</a>
+          <span class="legal-separator">•</span>
+          <a href="#hero">Cookie Preferences</a>
+          <span class="legal-separator">•</span>
+          <a href="#hero">Specification Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODAL 1: TEST DRIVE RESERVATION MODAL          -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="modal-test-drive" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-test-drive-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal window">&times;</button>
+      
+      <div class="modal-header">
+        <span class="section-badge">VIP RESERVATION</span>
+        <h3 class="modal-title" id="modal-test-drive-title">BOOK YOUR PRIVATE TEST DRIVE</h3>
+        <p class="modal-subtitle">Experience the symphony of horsepower and bespoke luxury under the guidance of a factory test pilot.</p>
+      </div>
+
+      <form class="modal-form" id="test-drive-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-model">Select Model <span class="required">*</span></label>
+            <select id="form-model" name="car_model" required class="form-input">
+              <option value="Velocity Apex Stradale">Velocity Apex Stradale (Flagship V12 - 940 HP)</option>
+              <option value="Velocity Phantom GT">Velocity Phantom GT (Twin-Turbo V8 - 850 HP)</option>
+              <option value="Velocity Electra EV">Velocity Electra EV (Quad-Motor - 1,150 HP)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form-location">Preferred Atelier / Circuit <span class="required">*</span></label>
+            <select id="form-location" name="location" required class="form-input">
+              <option value="monaco">Monaco Private Track Atelier</option>
+              <option value="beverly-hills">Beverly Hills Showroom (California)</option>
+              <option value="silverstone">Silverstone Track Experience (UK)</option>
+              <option value="tokyo">Tokyo Ginza Design Studio (Japan)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="form-name" name="fullname" placeholder="e.g. Julian Vance" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="form-email">Corporate / Personal Email <span class="required">*</span></label>
+            <input type="email" id="form-email" name="email" placeholder="julian@example.com" required class="form-input">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="form-phone" name="phone" placeholder="+1 (555) 019-2834" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="form-date">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="form-date" name="preferred_date" required class="form-input">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="form-notes">Special Requests or Track Preferences (Optional)</label>
+          <textarea id="form-notes" name="notes" rows="3" placeholder="Tell us about your driving experience or specific configuration inquiries..." class="form-input"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-block btn-lg">
+            <span>Confirm VIP Test Drive Reservation</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Success Notification Box inside Modal -->
+      <div class="modal-success-state" id="modal-success-state" style="display: none;">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FF1E27" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h4 class="success-title">RESERVATION CONFIRMED</h4>
+        <p class="success-desc">
+          Thank you, <span id="success-client-name" class="font-bold"></span>. Your private session for the <strong id="success-car-name" class="accent-text"></strong> has been forwarded to our VIP Concierge team. We will contact you within 4 business hours to finalize circuit schedules.
+        </p>
+        <button class="btn btn-secondary modal-close-btn-secondary">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL 2: CAR SPECIFICATIONS & DETAILS MODAL     -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="modal-car-details" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="details-car-title">
+    <div class="modal-dialog modal-dialog-lg">
+      <button class="modal-close-btn" aria-label="Close vehicle details window">&times;</button>
+      
+      <div class="details-modal-grid">
+        <div class="details-image-side">
+          <img id="details-modal-img" src="" alt="Vehicle Preview" class="details-full-img">
+          <div class="details-img-overlay"></div>
+          <div class="details-tag" id="details-modal-badge">HYPERCAR</div>
+        </div>
+
+        <div class="details-info-side">
+          <span class="section-badge" id="details-modal-category">CATEGORY</span>
+          <h3 class="details-title" id="details-car-title">Vehicle Model Name</h3>
+          <p class="details-price" id="details-car-price">$000,000</p>
+          <p class="details-overview" id="details-car-overview">Vehicle detailed overview description will appear here dynamically.</p>
+
+          <div class="details-specs-table">
+            <div class="spec-row">
+              <span class="spec-key">Engine / Powertrain</span>
+              <span class="spec-val" id="spec-engine">-</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Horsepower</span>
+              <span class="spec-val" id="spec-hp">-</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">0-60 MPH (0-100 km/h)</span>
+              <span class="spec-val" id="spec-accel">-</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Top Track Speed</span>
+              <span class="spec-val" id="spec-topspeed">-</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Transmission</span>
+              <span class="spec-val" id="spec-gearbox">-</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Curb Weight</span>
+              <span class="spec-val" id="spec-weight">-</span>
+            </div>
+          </div>
+
+          <div class="details-actions">
+            <button class="btn btn-primary btn-block modal-open-trigger" id="details-book-btn" data-modal="modal-test-drive">
+              <span>Book Test Drive For This Car</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
